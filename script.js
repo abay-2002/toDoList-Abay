@@ -127,12 +127,47 @@ tambahKegiatan.addEventListener('click',function(){
 
 		// menghapus li
 		li.addEventListener('dblclick',function(){
-			let tanya = confirm('yakin ingin hapus?');
-			if(tanya == true){
+			// let tanya = confirm('yakin ingin hapus?');
+			// popUpConfirm
+			let popUpParent = document.querySelector('#popUpParent');	
+
+			// popUpWrapper
+			let popUpWrapper = document.createElement('div');
+			popUpWrapper.setAttribute('id', 'popupWrapper');
+
+			//popUpConfirm
+			let popUpConfirm = document.createElement('div');
+			popUpConfirm.setAttribute('id', 'popUpConfirm');
+
+			//anak-anak popUpConfirm
+			//p
+			let pAnakPopUpConfirm = document.createElement('p');
+			pAnakPopUpConfirm.innerHTML = 'Yakin ingin hapus?';
+
+			// button
+			let buttonOk = document.createElement('button');
+			buttonOk.setAttribute('id', 'ok');
+			buttonOk.setAttribute('class', 'tombol');
+			buttonOk.innerHTML = 'Iya';
+
+			let buttonCancel = document.createElement('button');
+			buttonCancel.setAttribute('id', 'cancel');
+			buttonCancel.setAttribute('class', 'tombol');
+			buttonCancel.innerHTML = 'Batal';
+
+			popUpParent.appendChild(popUpWrapper);
+			popUpWrapper.appendChild(popUpConfirm);
+			popUpConfirm.appendChild(pAnakPopUpConfirm);
+			popUpConfirm.appendChild(buttonOk);
+			popUpConfirm.appendChild(buttonCancel);
+			
+			buttonOk.addEventListener('click',function(){
+				popUpParent.removeChild(popUpWrapper);
 				olParentLi.removeChild(li);
-			}else{
-				return 0;
-			}
+			});
+			buttonCancel.addEventListener('click',function(){
+				popUpParent.removeChild(popUpWrapper);
+			});
 		});
 }
 

@@ -171,10 +171,10 @@ button {
 	margin: auto;
 }
 
-/*#popUpConfirm #cancel{
-	grid-area: tombol2;
+#popUpConfirm #cancel{
+	width: 40%;
+	margin: auto;
 }
-*/
 
 
 
