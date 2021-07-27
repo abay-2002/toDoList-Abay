@@ -1,5 +1,9 @@
 // tombol submit judul
 // containerHeader
+
+// intinya apabila valuenya == 0 maka kasih alert
+// --isi alertnya "masukan kegiatan (Ok)"
+// apabila tidak 0 element == value.input
 let ubahJudul = document.getElementById('ubahJudul');
 ubahJudul.addEventListener('click',function(){
 	let masukanJudul = document.getElementById('masukanJudul');
@@ -49,6 +53,18 @@ ubahJudul.addEventListener('click',function(){
 });
 // penutup containerHeader
 let temaKegiatan = document.getElementById('temaKegiatan');
+
+
+
+// === PEMISAH ===
+
+// intinya apabila valuenya == 0 maka kasih alert
+// --isi alertnya "masukan kegiatan (Ok)"
+// apabila tidak 0 element == value.input
+
+// Apabila dblclick tampilkan alert(yakin hapus?)
+// apabila ok removeChild dan removeChild pop-upnya
+// apabila cancel removeChild pop-upnya saja
 
 // button tambah kegiatan 
 let tambahKegiatan = document.getElementById('tambahKegiatan');
