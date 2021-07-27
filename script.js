@@ -50,8 +50,6 @@ ubahJudul.addEventListener('click',function(){
 // penutup containerHeader
 let temaKegiatan = document.getElementById('temaKegiatan');
 
-
-
 // button tambah kegiatan 
 let tambahKegiatan = document.getElementById('tambahKegiatan');
 tambahKegiatan.addEventListener('click',function(){
