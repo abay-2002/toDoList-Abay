@@ -1,0 +1,184 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Comfortaa', cursive;
+	color:rgba(0, 0, 0, .8);
+	border-style: none;
+}
+
+body {
+	background-color: #1696cc;
+}
+
+input {
+	color: rgba(0, 0, 0, 1.0);
+	font-weight: bold;
+		border-radius: 4px;
+}
+
+button {
+	font-weight: bold;
+	width: 50%;
+	margin: auto;
+	margin-top: 4px;
+	border-radius: 4px;
+		cursor: pointer;
+	padding: 4px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 50%;
+	margin: auto;
+}
+
+/*containerHeader */
+.containerHeader {
+	margin: 50px 0 50px 0 ;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.containerHeader #temaJudul{
+	margin: auto;
+	background-color: #13eaed;
+	padding: 4px;
+	margin: auto;
+	margin-bottom: 4px;
+	border-radius: 4px;
+}
+
+/*penutup containerHeader*/
+/*containerKegiatan*/
+.containerKegiatan {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.containerKegiatan #temaKegiatan {
+	margin: auto;
+	background-color: #13eaed;
+	padding: 4px;
+	margin: auto;
+	margin-bottom: 4px;
+	border-radius: 4px;
+}
+
+/*penutup containerKegiatan*/
+/*kegiatanWrapper*/
+
+.awalLi {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #3aed34;
+	overflow: hidden;
+	width: 100%;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.awalLi p {
+	margin: auto;
+	font-weight: bold;
+}
+
+.awalLi .spanBefore {
+	display: block;
+	background-image: url(assets/icon/removeicon.png);
+	width: 26px;
+	height: 26px;
+	margin: auto;
+}
+
+/*=== PEMISAH ===*/
+.akhirLi {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: limegreen;
+	overflow: hidden;
+	width: 100%;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.akhirLi p {
+	margin: auto;
+}
+
+.akhirLi .spanAfter {
+	display: block;
+	background-image: url(assets/icon/centang.png);
+	width: 26px;
+	height: 26px;
+	margin: auto;
+}
+
+/*=== FIX STYLE LI ===*/
+.pKegiatan {
+	font-size: bold;
+	font-size: 16px;
+}
+
+.liStyle {
+	padding: 12px;
+	box-sizing: border-box;
+}
+
+/*=== POP-UP CONFIRM ===*/
+#popupWrapper {
+	background-color:rgba(0, 0, 0, .5);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	justify-content: center;
+}
+
+#popUpConfirm {
+	padding: 20px;
+	background-color: /*#13eaed*/ #1696cc;
+	border-radius: 4px;
+	position: relative;
+	z-index: 999;
+	margin: auto;
+	width: 40%;
+	margin-top: 18%;
+	display: grid;
+	grid-template-columns: 1fr /*1fr*/;
+	/*grid-template: 'tanya tanya'
+						'tombol1 tombol2'
+						;*/
+	grid-gap: 4px;
+}
+
+#popUpConfirm p {
+	margin: auto;
+	display: flex;
+	font-weight: bolder;
+	background-color: #13eaed;
+	padding: 4px;
+	border-radius: 4px;
+	justify-content: center;
+/*	grid-area: tanya;
+*/}
+
+#popUpConfirm #ok{
+	/*grid-area: tombol1;*/
+	width: 40%;
+	margin: auto;
+}
+
+/*#popUpConfirm #cancel{
+	grid-area: tombol2;
+}
+*/
+
+
+
+
+
+
+
