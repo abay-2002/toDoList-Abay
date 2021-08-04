@@ -249,6 +249,19 @@ footer p {
 	font-weight: bold;
 }
 
+
+@media only screen and (max-width: 768px){
+	footer p {
+		margin: auto;
+		margin-top: 8px;
+		margin-bottom: 8px;
+		font-size: 18px;
+		display: flex;
+		justify-content: center;
+		font-weight: bold;
+	}
+}
+
 footer #contactWrapper{
 	display: flex;
 	justify-content: center;

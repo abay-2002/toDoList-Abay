@@ -185,20 +185,7 @@ tambahKegiatan.addEventListener('click',function(){
 			});
 		});
 	}
-});
-
-function generatePDF() {
-        // Choose the element that our invoice is rendered in.
-        const element = document.getElementById("wrapperPrint")||document.getElementById('olParentLi');
-        // Choose the element and save the PDF for our user.
-        html2pdf()
-          .from(element)
-          .save();
-      }
-
-let printKegiatan = document.getElementById('printKegiatan');
-printKegiatan.addEventListener('click', generatePDF);
-
+}); 
 
 
 
