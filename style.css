@@ -187,6 +187,7 @@ button {
 
 #footerWrapper {
 	margin: auto;
+	margin-bottom: 0px;
 	width: 100%;	
 }
 
