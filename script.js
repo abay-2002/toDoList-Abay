@@ -68,6 +68,7 @@ let temaKegiatan = document.getElementById('temaKegiatan');
 
 // button tambah kegiatan 
 let tambahKegiatan = document.getElementById('tambahKegiatan');
+
 tambahKegiatan.addEventListener('click',function(){
 	// value masukan kegiatan
 	let masukanKegiatan = document.getElementById('masukanKegiatan');
@@ -183,19 +184,25 @@ tambahKegiatan.addEventListener('click',function(){
 				popUpParent.removeChild(popUpWrapper);
 			});
 		});
-}
-
-
-
-// ===classList()===
-// element.classList.add()		->	menambah suatu class
-// element.classList.remove()	-> 	menghapus suatu class
-// element.classList.toggle()	->	toggle seperti jquery yknow ¯\_(ツ)_/¯
-// element.classList.item()	-> 	mengembalikan nilai sebuah class
-// element.classList.contains()	-> 	apakah ada class 'ini' pada sebuah class yang 						diseleksi?
-// element.classList.replace()	->	mengganti sebuah class
-
-
+	}
 });
+
+function generatePDF() {
+        // Choose the element that our invoice is rendered in.
+        const element = document.getElementById("wrapperPrint")||document.getElementById('olParentLi');
+        // Choose the element and save the PDF for our user.
+        html2pdf()
+          .from(element)
+          .save();
+      }
+
+let printKegiatan = document.getElementById('printKegiatan');
+printKegiatan.addEventListener('click', generatePDF);
+
+
+
+
+
+
 
 
