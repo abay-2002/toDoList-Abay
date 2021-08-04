@@ -4,10 +4,19 @@
 	font-family: 'Comfortaa', cursive;
 	color:rgba(0, 0, 0, .8);
 	border-style: none;
+	text-decoration: none;
 }
 
 body {
 	background-color: #1696cc;
+}
+
+img {
+	width: 25px;
+}
+
+ul li {
+	display: inline-block;
 }
 
 input {
@@ -176,9 +185,50 @@ button {
 	margin: auto;
 }
 
+footer {
+	position: absolute;
+	bottom: 0;
+	background-color:rgba(19, 234, 237, .6);
+	width: 100%;
+	margin: auto;
 
+}
 
+footer ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
 
+footer ul li {
+	margin: 22px;
+}
 
+footer ul li a img{
+	width: 22px;
+}
+
+.miscellaneous {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+footer #thx {
+	margin-top: 22px;
+	font-size: 42px;
+}
+
+@media only screen and (max-width: 768px){
+	footer #thx {
+		margin-top: 22px;
+		font-size: 32px;
+	}	
+}
+
+footer #author{
+	margin-bottom: 22px;
+	font-size: 12px;
+}
 
 
