@@ -6,9 +6,12 @@
 	border-style: none;
 	text-decoration: none;
 }
-
-body {
+body{
+	height: 100%;
 	background-color: #1696cc;
+	/*display: flex;
+	flex-direction: column;
+	justify-content: space-between;*/
 }
 
 img {
@@ -35,11 +38,50 @@ button {
 	padding: 4px;
 }
 
+/*main {
+	width: 100%;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	background-color: salmon;
+}*/
+
+header {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	background-color: rgba(19, 234, 237,1);
+	border-radius: 4px;
+
+}
+
+header .headerContentWrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+}
+
+header .headerContentWrapper p {
+	margin: auto;
+}
+
+header .headerContentWrapper #tema {
+	font-size: 40px;
+	margin-bottom: 12px;
+	font-weight: bold;
+
+}
+
 .container {
 	display: grid;
 	grid-template-columns: 1fr;
 	width: 50%;
 	margin: auto;
+	/*background-color: salmon;*/
+	position: relative;
+	height: 500px;
 }
 
 /*containerHeader */
@@ -110,6 +152,7 @@ button {
 	width: 100%;
 	margin-top: 10px;
 	cursor: pointer;
+	position: static;
 }
 
 .akhirLi p {
@@ -185,56 +228,42 @@ button {
 	margin: auto;
 }
 
-#footerWrapper {
-	margin: auto;
-	margin-bottom: 0px;
-	width: 100%;	
-}
 
-footer {
-	position: absolute;
-	bottom: 0;
-	background-color:rgba(19, 234, 237, .6);
-	width: 100%;
-	margin: auto;
-
-}
-
-footer ul {
+footer {	
 	position: relative;
-	display: flex;
-	justify-content: center;
-}
-
-footer ul li {
-	margin: 22px;
-}
-
-footer ul li a img{
-	width: 22px;
-}
-
-.miscellaneous {
 	margin: auto;
+	width: 100%;
+	background-color: rgba(19, 234, 237,.8);
+	bottom: 0;
+	margin-top: 100px;
+	border-radius: 4px;
+}
+
+footer p {
+	margin: auto;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: 22px;
 	display: flex;
 	justify-content: center;
 }
 
-footer #thx {
-	margin-top: 22px;
-	font-size: 42px;
+footer #contactWrapper{
+	display: flex;
+	justify-content: center;
 }
 
-@media only screen and (max-width: 768px){
-	footer #thx {
-		margin-top: 22px;
-		font-size: 32px;
-	}	
+footer #contactWrapper ul li a{
+	margin: 8px;
 }
 
-footer #author{
-	margin-bottom: 22px;
+footer #contactWrapper ul li a img{
+	width: 16px;
+}
+
+footer #authorWeb {
+	margin: 8px;
+	display: flex;
+	justify-content: center;
 	font-size: 12px;
 }
-
-

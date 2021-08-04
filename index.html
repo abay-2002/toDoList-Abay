@@ -14,82 +14,81 @@
 </head>
 <body>
 
-<div id="wrapperPrint">
-	<div class="container">
-		<!-- containerHeader -->
-		<div class="containerHeader">
-			<h2 id="temaJudul">Kegiatan liburan :D</h2>
-			<input type="text" id="masukanJudul">
-			<button id="ubahJudul">Ubah Judul</button>
-		</div>	
-		<!-- containerKegiatan -->
-		<div class="containerKegiatan">
-			<h2 id="temaKegiatan">Ceklis kamu:</h2>
-			<input type="text" id="masukanKegiatan">
-			<button id="tambahKegiatan">Tambah</button>
-		</div>
-		<!-- kegiatanWrapper -->
-		<div class="kegiatanWrapper">
-			<ol id="olParentLi">
-				
-				 <!-- 
-				<li class="awalLi liStyle">
-					<p class="pKegiatan">Paragraf</p>
-					<span class="spanBefore"></span>
-				</li>
-				<li class="akhirLi liStyle">
-					<p class="pKegiatan">Paragraf</p>
-					<span class="spanAfter"></span>
-				</li>  -->
-
-			
-			</ol>
-		</div>
-
-		<div id="popUpParent">
-		
-			<!-- <div id="popupWrapper">
-				<div id="popUpConfirm">
-					<p>Yakin?</p>
-					<button id="ok" class="tombol">Ok</button>
-					<button id="cancel" class="tombol">Cancel</button>
-				</div>
-			</div>
-	 -->
-	 	</div>
+<header>
+	<div class="headerContentWrapper">
+		<p id="tema">To Do List</p>
+		<p>Oleh: <a href="http://akbarangkasa.com/" target="blank">abay</a></p>
 	</div>
-</div>
+</header>
 
-<div id="footerWrapper">
+
+<div class="container">
+	<!-- containerHeader -->
+	<div class="containerHeader">
+		<h2 id="temaJudul">Kegiatan liburan :D</h2>
+		<input type="text" id="masukanJudul">
+		<button id="ubahJudul">Ubah Judul</button>
+	</div>	
+	<!-- containerKegiatan -->
+	<div class="containerKegiatan">
+		<h2 id="temaKegiatan">Ceklis kamu:</h2>
+		<input type="text" id="masukanKegiatan">
+		<button id="tambahKegiatan">Tambah</button>
+	</div>
+	<!-- kegiatanWrapper -->
+	<div class="kegiatanWrapper">
+		<ol id="olParentLi">
+			<!-- 
+			<li class="awalLi liStyle">
+				<p class="pKegiatan">Paragraf</p>
+				<span class="spanBefore"></span>
+			</li>
+			<li class="akhirLi liStyle">
+				<p class="pKegiatan">Paragraf</p>
+				<span class="spanAfter"></span>
+			</li>  
+			 -->
+		</ol>
+	</div>
+
+	<div id="popUpParent">
+	
+		<!-- 
+		<div id="popupWrapper">
+			<div id="popUpConfirm">
+				<p>Yakin?</p>
+				<button id="ok" class="tombol">Ok</button>
+				<button id="cancel" class="tombol">Cancel</button>
+			</div>
+		</div>
+ 		-->
+ 	</div>
 	<footer>
-		<p class="miscellaneous" id="thx"> 
-			Terima Kasih
-		</p>
-		<ul>
-			<li>
-				<a href="#">
-					<img src="assets/contactlogo/gmaillogo.png">
-				</a>		
-			</li>
-			<li>
-				<a href="#">
-					<img src="assets/contactlogo/githublogo.png">
-				</a>		
-			</li>
-			<li>
-				<a href="#">
-					<img src="assets/contactlogo/logoig.png">
-				</a>		
-			</li>
-			<li>
-				<a href="https://wa.me/6282297008375/?text=Hallo%20Akbar%20Angkasa" target="blank">
-					<img src="assets/contactlogo/whatsapplogo.png">
-				</a>		
-			</li>
-		</ul>
-		<a href="http://akbarangkasa.com/" class="miscellaneous" id="author" target="blank">akbarangkasa.com</a>
+		<p>Terima Kasih</p>
+		<div id="contactWrapper">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="assets/contactlogo/githublogo.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="assets/contactlogo/gmaillogo.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="assets/contactlogo/whatsapplogo.png">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<a href="#" id="authorWeb">akbarangkasa.com</a>
 	</footer>
-</div>
+</div> <!-- container -->
+
+
 
 </body>
 <script src="script.js"></script>
